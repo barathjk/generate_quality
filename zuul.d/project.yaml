@@ -1,0 +1,14 @@
+- project:
+    default-branch: main
+    gh_check:
+      jobs:
+        - bazel-build
+    gh_gate:
+      jobs:
+        - bazel-build
+    gh_post:
+      jobs:
+        - bazel-build
+    gh_tag:
+      jobs:
+        - bazel-build

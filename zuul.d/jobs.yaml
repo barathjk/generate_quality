@@ -1,0 +1,9 @@
+- job:
+    name: bazel-build
+    description: "Run Bazel build"
+    run: playbooks/run-bazel.yaml
+
+    nodeset:
+      nodes:
+        - name: ubuntu-jammy
+          label: ubuntu-jammy # Adjust based on the node type
