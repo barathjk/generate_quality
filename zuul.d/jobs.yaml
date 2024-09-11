@@ -2,7 +2,9 @@
     name: bazel-build
     description: "Run Bazel build"
     run: playbooks/run-bazel.yaml
-
+    post-run:
+      playbooks: 
+        - post-playbook.yaml
     nodeset:
       nodes:
         - name: ubuntu-jammy

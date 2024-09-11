@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  roles:
+    - generate-zuul-manifest
+    - role: publish-artifacts-to-fileserver
