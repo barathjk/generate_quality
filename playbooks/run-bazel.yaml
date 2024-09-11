@@ -59,7 +59,7 @@
       args:
         chdir: "{{ zuul.project.src_dir }}
 
-    - name: ls
+    - name: list the files
       command: ls # Adjust the Bazel command as needed
       args:
         chdir: "{{ zuul.project.src_dir }}
