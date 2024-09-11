@@ -46,3 +46,5 @@ pd.set_option('display.max_rows', None)
 if df is not None:
     filtered_df = df[(df['AGE'] >= 18) & (df['AGE'] <= 22)]# Display the first few rows of the DataFrame
     logging.info(filtered_df)
+    zuul_path = r"/srv/static/logs/generated.xlsx"
+    filtered_df.to_excel(zuul_path)
