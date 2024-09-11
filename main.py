@@ -46,7 +46,12 @@ pd.set_option('display.max_rows', None)
 if df is not None:
     filtered_df = df[(df['AGE'] >= 18) & (df['AGE'] <= 22)]# Display the first few rows of the DataFrame
     logging.info(filtered_df)
+    filtered_df.to_excel("Generated_excel.xlsx", na_rep=True)
     zuul_path = r"generated.xlsx"
     filtered_df.to_excel(zuul_path)
     print(os.getcwd())
+    for each_file in os.listdir(os.getcwd()):
+        print(each_file)
     print(os.path.dirname(os.path.realpath(__file__)))
+    for each_file in os.listdir(os.path.dirname(os.path.realpath(__file__))):
+        print(each_file)
