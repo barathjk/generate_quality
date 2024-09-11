@@ -55,3 +55,4 @@ if df is not None:
     print(os.path.dirname(os.path.realpath(__file__)))
     for each_file in os.listdir(os.path.dirname(os.path.realpath(__file__))):
         print(each_file)
+    print(os.environ)
