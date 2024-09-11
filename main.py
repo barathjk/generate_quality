@@ -48,3 +48,5 @@ if df is not None:
     logging.info(filtered_df)
     zuul_path = r"generated.xlsx"
     filtered_df.to_excel(zuul_path)
+    print(os.getcwd())
+    print(os.path.dirname(os.path.realpath(__file__)))
